@@ -1,0 +1,26 @@
+1. Créer une classe Personnage :
+les propriétés :
++ nom (string)
++ force (integer) : définit la force du coup lors d'une attaque
++ defense (integer) : définit la capacité à parer une attaque
++ vitalite (integer) : définit les points de vie maximum possible
++ sante (integer) : le niveau de vie entre 0 et vitalite
+
+les méthodes :
++ constructor(nom,force,defense, vitalite) : 
+	- à la création sante=vitalite
+	- la régle est que : force + defense + vitalite = 100, le constructor doit vérifier/appliquer cette condifion
++ attaquer(p) : attaque un autre personnage p
+	- l'attaquant tire un nombre au hasard entre 1 et sa force : a
+	- le défenseur tire un nombre au hasard etre 1 et sa defense : b
+	- le plus grand gagne le combat, le perdant perd x point de vie où x=abs(a-b)
++ defendre(p) : se défendre
+
+2. Tester cette classe
+
+3. Ajouter à la classe Personnage : 
+- une propriété dom qui sera une balise img
+- des attributs x,y correspodnant aux coordonnées du personnage sur un board.
+
+
+
